@@ -1,9 +1,27 @@
 :root {
   /* variables */
-  --cg-black: rgb(30, 32, 32);
+  --cg-black: rgb(0, 0, 0);
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+}
+
+.gradient {
+  background: linear-gradient(100deg, #49d5f8, #e174f4, #f64848);
+  /* background: linear-gradient(100deg, #000000, #003cff, #000000); */
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 html {
@@ -11,7 +29,7 @@ html {
 }
 
 body {
-  background: var(--cg-grey);
+  background: rgb(40, 40, 40);
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -172,7 +190,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: rgb(40, 40, 40);
   border: 1px solid #ccc;
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -270,5 +288,9 @@ main {
 footer {
   text-align: center;
   padding: 7px;
-  background-color: rgb(30, 32, 32); /* optional */
+  background-color: var(--cg-black); /* optional */
+}
+
+body {
+  color: white;
 }
