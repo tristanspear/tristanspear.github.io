@@ -294,3 +294,17 @@ footer {
 body {
   color: white;
 }
+
+.post-container {
+  height: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blog-post {
+  border: white solid 3px;
+  border-radius: 10px; 
+  width: 150px;
+  height: 300px;
+}
